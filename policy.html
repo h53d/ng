@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="./logo512.png">
+    <link rel="shortcut icon" href="./logo512.png" media="(prefers-color-scheme: light)" />
+    <link rel="shortcut icon" href="./logo512.png" media="(prefers-color-scheme: dark)"/>
+    <link rel="icon" type="image/png" href="./logo512.png">
+    <title>Privacy Policy - NumisGallery</title>
+    <style>
+        :root {
+            --bg: #07090d;
+            --card: #121722;
+            --card-soft: #171e2b;
+            --text: #edf1f8;
+            --muted: #a5b2c9;
+            --accent: #1f8a7a;
+            --accent-soft: rgba(31, 138, 122, 0.22);
+            --gold: #cdb378;
+            --line: rgba(237, 241, 248, 0.12);
+            --radius: 14px;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #f5f7fb;
+                --card: #ffffff;
+                --card-soft: #f8fafc;
+                --text: #111827;
+                --muted: #5f6e86;
+                --accent: #0f766a;
+                --accent-soft: rgba(15, 118, 106, 0.14);
+                --gold: #8c6a2f;
+                --line: rgba(17, 24, 39, 0.12);
+            }
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            background: radial-gradient(circle at 20% 0%, rgba(31,138,122,0.10), transparent 45%), var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.62;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 760px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .app-icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 14px;
+            border-radius: 18px;
+            background: url('./logo512.png') center/cover no-repeat;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .summary {
+            background: linear-gradient(135deg, var(--accent-soft), rgba(205, 179, 120, 0.10));
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 16px 18px;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        section {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 14px;
+        }
+
+        h2 {
+            margin: 0 0 12px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: "";
+            width: 4px;
+            height: 18px;
+            border-radius: 2px;
+            background: linear-gradient(180deg, var(--accent), var(--gold));
+        }
+
+        ul {
+            margin: 8px 0 0;
+            padding-left: 20px;
+        }
+
+        li { margin-bottom: 8px; }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .chip {
+            display: inline-block;
+            font-size: 12px;
+            color: var(--gold);
+            border: 1px solid rgba(205, 179, 120, 0.45);
+            background: rgba(205, 179, 120, 0.08);
+            border-radius: 999px;
+            padding: 4px 10px;
+            margin-top: 2px;
+        }
+
+        footer {
+            color: var(--muted);
+            text-align: center;
+            font-size: 13px;
+            margin: 26px 0 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="app-icon"></div>
+        <h1>NumisGallery Privacy Policy</h1>
+        <div class="subtitle">Effective Date: March 18, 2026</div>
+    </header>
+
+    <div class="summary">
+        NumisGallery is an educational and numismatic study app. This policy explains what data is processed,
+        how it is handled, and how compliance controls are enforced in product behavior.
+    </div>
+
+    <section>
+        <h2>1. Data Handling Scope</h2>
+        <ul>
+            <li>NumisGallery does not require account registration or user login.</li>
+            <li>Core browsing state, selected country/denomination, and local app data are stored on-device.</li>
+            <li>The app is designed for in-app study viewing, not for document reproduction workflows.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. Network Use</h2>
+        <ul>
+            <li>The release app primarily uses bundled assets and seeded metadata.</li>
+            <li>Some image metadata includes Wikimedia source references; runtime fetch logic exists for controlled scenarios.</li>
+            <li>No in-app advertising SDKs are integrated in this project codebase.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Compliance Measures</h2>
+        <div class="chip">App-Specific Controls</div>
+        <ul>
+            <li><strong>Single-side presentation:</strong> banknotes are displayed one side at a time.</li>
+            <li><strong>Non-1:1 rendering:</strong> presentation constraints are applied to avoid print-like scale parity.</li>
+            <li><strong>No export/share/print pipeline:</strong> the app does not provide built-in export, sharing, or printing.</li>
+            <li><strong>Capture-awareness overlay:</strong> when system capture is detected, watermark protection is applied in gallery views.</li>
+            <li><strong>Startup compliance gate:</strong> users must acknowledge the compliance notice before first hero reveal.</li>
+            <li><strong>Release scope controls:</strong> market/currency availability is explicitly constrained by configuration, seed, and compliance matrix.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. Disclaimer</h2>
+        <ul>
+            <li>NumisGallery is provided for educational and numismatic study only.</li>
+            <li>The app does not provide legal advice.</li>
+            <li>Users are responsible for complying with applicable laws, issuer rules, and local regulations in their jurisdiction.</li>
+            <li>Any misuse for reproduction, counterfeiting, or unlawful activity is strictly outside intended use.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Third-Party Content Attribution</h2>
+        <ul>
+            <li>Banknote images and related metadata may originate from third-party public sources (for example Wikimedia and issuer references).</li>
+            <li>Usage posture is tracked through project compliance governance and scoped release datasets.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>6. Policy Updates</h2>
+        <p>
+            This policy may be updated as features, legal posture, or release scope evolves.
+            The effective date at the top indicates the current version.
+        </p>
+    </section>
+
+    <section>
+        <h2>7. Contact</h2>
+        <p style="margin: 0;">
+            For privacy or compliance-related questions, contact:
+            <a href="mailto:danjian42@gmail.com">danjian42@gmail.com</a>
+        </p>
+    </section>
+
+    <footer>
+        © 2026 NumisGallery. Educational use only.
+    </footer>
+</div>
+</body>
+</html>
